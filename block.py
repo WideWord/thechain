@@ -94,7 +94,7 @@ class Block:
 
     def __str__(self):
         return 'Block #{} nonce {}\ncontent hash:{}\nhash:{}\n'\
-            .format(self.height, self.nonce, binascii.hexlify(self.hash), binascii.hexlify(self.content.hash))
+            .format(self.height, self.nonce, binascii.hexlify(self.content.hash), binascii.hexlify(self.hash))
 
 def main():
     post = Post.from_string('hello')
